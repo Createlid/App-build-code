@@ -1,0 +1,26 @@
+{
+    "Service": "/tutapplication/Services/com_sap_edm_sampleservice_v4.service",
+    "DefiningRequests": [{
+            "Name": "Customers",
+            "Query": "Customers"
+        },
+        {
+            "Name": "Products",
+            "Query": "Products"
+        },
+        {
+            "Name": "SalesOrderHeaders",
+            "Query": "SalesOrderHeaders"
+        },
+        {
+            "Name": "SalesOrderItems",
+            "Query": "SalesOrderItems"
+        }
+    ],
+    "_Type": "Action.Type.OfflineOData.Download",
+    "ActionResult": {
+        "_Name": "sync"
+    },
+    "OnFailure": "/tutapplication/Actions/com_sap_edm_sampleservice_v4/Service/SyncFailureMessage.action",
+    "OnSuccess": "/tutapplication/Rules/ErrorArchive/ErrorArchive_CheckForSyncError.js"
+}

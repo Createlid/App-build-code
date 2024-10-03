@@ -1,0 +1,8 @@
+{
+    "_Type": "Action.Type.ApplicationUpdate",
+    "ActionResult": {
+        "_Name": "AppUpdate"
+    },
+    "OnFailure": "/tutapplication/Rules/Application/AppUpdateFailure.js",
+    "OnSuccess": "/tutapplication/Rules/Application/AppUpdateSuccess.js"
+}

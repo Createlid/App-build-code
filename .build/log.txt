@@ -1,0 +1,2 @@
+Pass:
+Generated bundle file /home/user/projects/tutapplication/.build/tutapplication/.build/uploadBundle.zip
